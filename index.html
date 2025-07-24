@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Reading Rabbithole</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      background-color: #fffaf5;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      overflow: hidden;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100%;
+      padding: 20px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    img {
+      max-width: 350px;
+      margin-bottom: 30px;
+      animation: slideDown 1s ease forwards;
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      margin-bottom: 0.3em;
+      color: #000;
+      opacity: 0;
+      animation: fadeUp 1s ease 0.8s forwards;
+    }
+    p {
+      font-size: 1.1em;
+      color: #555;
+      max-width: 500px;
+      opacity: 0;
+      animation: fadeUp 1s ease 1.2s forwards;
+    }
+    .instagram-link {
+      margin-top: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      color: white;
+      background-color: #e1306c;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 1em;
+      opacity: 0;
+      animation: fadeUp 1s ease 1.6s forwards;
+      transition: background-color 0.3s ease;
+    }
+    .instagram-link:hover {
+      background-color: #c82b60;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      0% { transform: translateY(-30px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+      0% { transform: translateY(20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="reading_rabbithole_logo_custom_bg.png" alt="The Reading Rabbithole Logo">
+    <h1>Coming Soon</h1>
+    <p>The Reading Rabbithole is burrowing deep into the world of books.<br>Our online shop is launching soon—stay curious!</p>
+    <a href="https://www.instagram.com/reading_rabbitholes" target="_blank" class="instagram-link">Follow us on Instagram</a>
+  </div>
+</body>
+</html>
