@@ -1,128 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>The Reading Rabbithole</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400&display=swap" rel="stylesheet" />
   <style>
     html, body {
-      height: 100%;
       margin: 0;
+      padding: 0;
+      height: 100%;
       background-color: #fffaf5;
       font-family: 'Poppins', sans-serif;
       color: #333;
-      overflow-x: hidden;
     }
     .container {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      padding: 60px 20px;
       text-align: center;
-      min-height: 100vh;
-      padding: 40px 20px;
-      animation: fadeIn 1.2s ease-in-out;
+      max-width: 600px;
+      margin: auto;
     }
     img {
-      max-width: 320px;
+      max-width: 260px;
       margin-bottom: 30px;
-      animation: slideDown 1s ease forwards;
     }
     h1 {
       font-family: 'Great Vibes', cursive;
-      font-size: 3.2em;
-      margin-bottom: 0.2em;
-      color: #000;
-      opacity: 0;
-      animation: fadeUp 1s ease 0.8s forwards;
+      font-size: 3em;
+      margin-bottom: 0.4em;
     }
-    p {
-      font-size: 1.05em;
-      color: #555;
-      max-width: 480px;
-      margin: 0.5em 0;
-      opacity: 0;
-      animation: fadeUp 1s ease 1.2s forwards;
-    }
-    .signup-intro {
-      font-weight: 500;
-      margin-top: 2.5rem;
+    .subtitle {
       font-size: 1.1em;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 30px;
     }
     .instagram-link {
-      margin-top: 30px;
-      text-decoration: none;
-      font-weight: 500;
-      color: white;
       background-color: #e1306c;
+      color: white;
+      text-decoration: none;
       padding: 12px 24px;
       border-radius: 30px;
+      font-weight: 500;
       font-size: 1em;
-      opacity: 0;
-      animation: fadeUp 1s ease 1.6s forwards;
+      margin-bottom: 40px;
       transition: background-color 0.3s ease;
     }
     .instagram-link:hover {
       background-color: #c82b60;
     }
-
+    .signup-heading {
+      font-weight: 500;
+      font-size: 1.1em;
+      margin-bottom: 10px;
+      color: #444;
+    }
     .kit-form-container {
-      max-width: 360px;
       width: 100%;
-      margin: 20px auto 0;
-      animation: fadeUp 1s ease 2s forwards;
-      opacity: 0;
+      max-width: 400px;
     }
 
-    /* Optional: Style the embedded Kit form */
-    .kit-form-container input,
-    .kit-form-container button {
+    /* Optional: basic styling override for Kit embedded form */
+    .kit-form-container form input[type="email"],
+    .kit-form-container form button {
       border-radius: 30px !important;
-      padding: 12px !important;
-      font-size: 1em !important;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes slideDown {
-      0% { transform: translateY(-30px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 1; }
-    }
-
-    @keyframes fadeUp {
-      0% { transform: translateY(20px); opacity: 0; }
-      100% { transform: translateY(0); opacity: 1; }
     }
 
     @media (max-width: 480px) {
-      img {
-        max-width: 220px;
-      }
-      h1 {
-        font-size: 2.2em;
-      }
-      p {
-        font-size: 1em;
-      }
-      .instagram-link {
-        font-size: 0.95em;
-        padding: 10px 20px;
-      }
+      h1 { font-size: 2.2em; }
+      .subtitle, .signup-heading { font-size: 1em; }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img src="reading_rabbithole_logo_custom_bg.png" alt="The Reading Rabbithole Logo">
+    <img src="reading_rabbithole_logo_custom_bg.png" alt="The Reading Rabbithole Logo" />
     <h1>Coming Soon</h1>
-    <p>The Reading Rabbithole is burrowing deep into the world of books.<br>Our online shop is launching soon—stay curious!</p>
-    <a href="https://www.instagram.com/the_reading_rabbithole" target="_blank" class="instagram-link">Follow us on Instagram</a>
-
-    <p class="signup-intro">If you’re really curious, sign up for a sneak peek 🕳️📚</p>
+    <p class="subtitle">
+      The Reading Rabbithole is burrowing deep into the world of books.<br/>
+      Our online shop is launching soon—stay curious!
+    </p>
+    <a href="https://www.instagram.com/the_reading_rabbithole" target="_blank" class="instagram-link">
+      Follow us on Instagram
+    </a>
+    <p class="signup-heading">If you're really curious, sign up for a sneak peek 🕳️📚</p>
     <div class="kit-form-container">
       <script async data-uid="976240cdf9" src="https://the-reading-rabbithole.kit.com/976240cdf9/index.js"></script>
     </div>
